@@ -1,0 +1,40 @@
+{
+  "name": "@sab/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.34.0",
+    "@hono/node-server": "^1.13.7",
+    "@hono/trpc-server": "^0.3.4",
+    "@sab/db": "workspace:*",
+    "@sab/shared-types": "workspace:*",
+    "@sab/shared-validation": "workspace:*",
+    "@sentry/node": "^8.47.0",
+    "@supabase/supabase-js": "^2.47.10",
+    "@trpc/server": "^11.0.0-rc.660",
+    "bullmq": "^5.34.4",
+    "hono": "^4.6.14",
+    "ioredis": "^5.4.2",
+    "pino": "^9.5.0",
+    "pino-http": "^10.3.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@sab/config": "workspace:*",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
