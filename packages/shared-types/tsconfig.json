@@ -1,0 +1,4 @@
+{
+  "extends": "@sab/config/tsconfig/base",
+  "include": ["src/**/*.ts"]
+}
