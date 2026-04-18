@@ -1,0 +1,7 @@
+{
+  "extends": "@sab/config/tsconfig/rn",
+  "compilerOptions": {
+    "types": ["expo"]
+  },
+  "include": ["app/**/*", "src/**/*", "app.json", "expo-env.d.ts"]
+}
