@@ -14,4 +14,16 @@ export default [
       'no-console': 'off',
     },
   },
+  {
+    // Metro and Babel must be CommonJS files for the RN toolchain to load them.
+    files: ['metro.config.js', 'babel.config.js'],
+    languageOptions: {
+      sourceType: 'commonjs',
+      globals: { ...globals.node, module: 'readonly', require: 'readonly', __dirname: 'readonly' },
+    },
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
+      'import/order': 'off',
+    },
+  },
 ];

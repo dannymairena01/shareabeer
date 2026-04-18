@@ -5,8 +5,6 @@
  * schema in @sab/shared-validation. We never hand-write DTO shapes that are
  * validated at the wire — that risks drift between the validator and the type.
  */
-import type { z } from 'zod';
-
 import type {
   beerLogCreateSchema,
   postCreateSchema,
@@ -14,6 +12,7 @@ import type {
   sessionStartSchema,
   sessionEndSchema,
 } from '@sab/shared-validation';
+import type { z } from 'zod';
 
 export type BeerLogCreate = z.infer<typeof beerLogCreateSchema>;
 export type PostCreate = z.infer<typeof postCreateSchema>;

@@ -4,6 +4,7 @@ import { randomUUID } from 'node:crypto';
 import { serve } from '@hono/node-server';
 import { trpcServer } from '@hono/trpc-server';
 import * as Sentry from '@sentry/node';
+import type { Context } from 'hono';
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { requestId } from 'hono/request-id';
@@ -31,15 +32,23 @@ app.use('*', cors({ origin: '*', credentials: false }));
 app.get('/healthz', (c) => c.json({ ok: true, service: 'api' }));
 app.get('/readyz', (c) => c.json({ ok: true, service: 'api' }));
 
+function createTrpcContext(c: Context): TrpcContext {
+  return {
+    hono: c,
+    user: null, // Populated by auth middleware in Phase 1.
+    requestId: c.get('requestId') ?? randomUUID(),
+  };
+}
+
 app.use(
   '/trpc/*',
   trpcServer({
     router: appRouter,
-    createContext: (_opts, c): TrpcContext => ({
-      hono: c,
-      user: null, // Populated by auth middleware in Phase 1.
-      requestId: c.get('requestId') ?? randomUUID(),
-    }),
+    // @hono/trpc-server types createContext as returning Record<string, unknown>.
+    // Our TrpcContext is structurally compatible but lacks the index signature,
+    // so we cast the function at the boundary. Safe — tRPC treats context as opaque.
+    createContext: ((_opts: unknown, c: Context) =>
+      createTrpcContext(c) as unknown as Record<string, unknown>) as never,
     onError: ({ error, path }) => {
       logger.error({ err: error, path }, 'tRPC error');
     },

@@ -13,7 +13,7 @@
     "test": "echo \"@sab/recognition has no tests yet.\""
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.34.0",
+    "@anthropic-ai/sdk": "^0.90.0",
     "@hono/node-server": "^1.13.7",
     "@sentry/node": "^8.47.0",
     "hono": "^4.6.14",

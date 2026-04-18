@@ -13,7 +13,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.34.0",
+    "@anthropic-ai/sdk": "^0.90.0",
     "@hono/node-server": "^1.13.7",
     "@hono/trpc-server": "^0.3.4",
     "@sab/db": "workspace:*",

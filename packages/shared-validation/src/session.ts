@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { locationSchema, privacyLevelSchema, uuidSchema } from './common.js';
+import { locationSchema, uuidSchema } from './common.js';
 
 /**
  * UC-5 — start a session. BR-12 enforces one active session per user;
