@@ -1,0 +1,48 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sab-postgres
+    environment:
+      POSTGRES_USER: sab
+      POSTGRES_PASSWORD: sab
+      POSTGRES_DB: shareabeer
+    ports:
+      - "5432:5432"
+    volumes:
+      - sab-postgres-data:/var/lib/postgresql/data
+      - ./postgres-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sab -d shareabeer"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    container_name: sab-redis
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - sab-redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.12
+    container_name: sab-meilisearch
+    environment:
+      MEILI_ENV: development
+      MEILI_MASTER_KEY: dev-master-key-change-me
+    ports:
+      - "7700:7700"
+    volumes:
+      - sab-meilisearch-data:/meili_data
+
+volumes:
+  sab-postgres-data:
+  sab-redis-data:
+  sab-meilisearch-data:
