@@ -26,6 +26,7 @@ recognition service is isolated so swapping models doesn't affect clients.
 ## Consequences
 
 **Pros**
+
 - Fastest path to the SM-4 85% target without training data.
 - Tool-use schema makes the output structurally reliable (no brittle string
   parsing). We can strictly validate candidates with Zod.
@@ -35,6 +36,7 @@ recognition service is isolated so swapping models doesn't affect clients.
   the mobile client or the API gateway.
 
 **Cons / accepted trade-offs**
+
 - Per-call cost is higher than a bespoke classifier at scale. Acceptable
   pre-traction; we pre-plan the migration to a fine-tuned model once
   volume and labeled-data programs justify it.

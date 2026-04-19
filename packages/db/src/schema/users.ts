@@ -13,12 +13,7 @@ import {
   varchar,
 } from 'drizzle-orm/pg-core';
 
-import {
-  accountStatus,
-  ageVerificationDecision,
-  dmPolicy,
-  privacyLevel,
-} from './enums.js';
+import { accountStatus, ageVerificationDecision, dmPolicy, privacyLevel } from './enums.js';
 
 export const users = pgTable(
   'users',

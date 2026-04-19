@@ -27,6 +27,7 @@ nothing else.
 ## Consequences
 
 **Pros**
+
 - Our graph (follows, feed, sessions, moderation, audit logs) is exactly
   what Postgres is best at. Firestore would force awkward denormalization.
 - GoTrue handles Apple / Google / email auth out of the box — materially
@@ -38,6 +39,7 @@ nothing else.
   real-time comment/like fanout).
 
 **Cons / accepted trade-offs**
+
 - Supabase is a younger managed provider than AWS RDS. We mitigate by
   keeping business logic in our own services (so a migration off Supabase
   is mechanical — port Auth to Clerk/Auth0, point Drizzle at RDS, re-attach

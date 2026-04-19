@@ -24,6 +24,7 @@ Option **(1)** — Drizzle.
 ## Consequences
 
 **Pros**
+
 - SQL-first API: queries stay legible and close to Postgres.
 - First-class Postgres features: JSONB typing, partial indexes, `pgEnum`,
   `pg_trgm` via raw SQL where we need it, custom indexes with `WHERE` clauses.
@@ -33,6 +34,7 @@ Option **(1)** — Drizzle.
 - Native Postgres migration files (no bespoke DSL to learn).
 
 **Cons / accepted trade-offs**
+
 - Smaller ecosystem of tutorials than Prisma. Worth it for the performance
   and Postgres feature fit.
 - Migration diffing is less magical than Prisma's; we will review

@@ -2,14 +2,7 @@
  * Social graph — follows + follow-request cool-offs.
  * UC-8/9 (feeds), UC-20 (follow/unfollow), BR-19.
  */
-import {
-  index,
-  pgTable,
-  primaryKey,
-  timestamp,
-  uniqueIndex,
-  uuid,
-} from 'drizzle-orm/pg-core';
+import { index, pgTable, primaryKey, timestamp, uniqueIndex, uuid } from 'drizzle-orm/pg-core';
 
 import { followState } from './enums.js';
 import { users } from './users.js';

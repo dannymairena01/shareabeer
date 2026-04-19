@@ -41,16 +41,17 @@ pnpm -r test
 
 ## Run
 
-| Command | What it does |
-|---|---|
-| `pnpm dev:api` | Starts the Hono + tRPC API on `http://localhost:4000` |
-| `pnpm dev:recognition` | Starts the recognition service stub on `:4010` |
-| `pnpm dev:mobile` | Starts the Expo dev server |
-| `pnpm dev:admin` | Starts the Next.js admin console on `:3001` |
-| `pnpm dev:infra` | `docker compose up -d` for Postgres / Redis / Meilisearch |
-| `pnpm db:studio` | Opens Drizzle Studio |
+| Command                | What it does                                              |
+| ---------------------- | --------------------------------------------------------- |
+| `pnpm dev:api`         | Starts the Hono + tRPC API on `http://localhost:4000`     |
+| `pnpm dev:recognition` | Starts the recognition service stub on `:4010`            |
+| `pnpm dev:mobile`      | Starts the Expo dev server                                |
+| `pnpm dev:admin`       | Starts the Next.js admin console on `:3001`               |
+| `pnpm dev:infra`       | `docker compose up -d` for Postgres / Redis / Meilisearch |
+| `pnpm db:studio`       | Opens Drizzle Studio                                      |
 
 Smoke test the API:
+
 ```bash
 curl http://localhost:4000/healthz
 # => {"ok":true,"service":"api"}

@@ -7,15 +7,7 @@
  * circular import. The FK is enforced at the SQL level; if you see type
  * errors here, check that sessions.ts loads before runtime usage of this file.
  */
-import {
-  index,
-  integer,
-  numeric,
-  pgTable,
-  timestamp,
-  uuid,
-  varchar,
-} from 'drizzle-orm/pg-core';
+import { index, integer, numeric, pgTable, timestamp, uuid, varchar } from 'drizzle-orm/pg-core';
 
 import { beers } from './beers.js';
 import { servingSize } from './enums.js';

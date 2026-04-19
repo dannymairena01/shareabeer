@@ -8,13 +8,17 @@ import type { Context as HonoContext } from 'hono';
  */
 export interface TrpcContext {
   hono: HonoContext;
-  user:
-    | {
-        userId: string;
-        ageVerified: boolean;
-        status: 'active' | 'warned' | 'suspended' | 'banned' | 'pending_age_verification' | 'blocked_underage';
-      }
-    | null;
+  user: {
+    userId: string;
+    ageVerified: boolean;
+    status:
+      | 'active'
+      | 'warned'
+      | 'suspended'
+      | 'banned'
+      | 'pending_age_verification'
+      | 'blocked_underage';
+  } | null;
   requestId: string;
 }
 

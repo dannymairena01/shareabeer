@@ -1,9 +1,9 @@
 # Share a Beer — Vision and Scope
 
-| **Share a Beer** | **Version: 1.0** |
-| --- | --- |
-| Vision | **Date: 17/Apr/26** |
-| Document ID: SAB-VIS-001 | |
+| **Share a Beer**         | **Version: 1.0**    |
+| ------------------------ | ------------------- |
+| Vision                   | **Date: 17/Apr/26** |
+| Document ID: SAB-VIS-001 |                     |
 
 **Personal Project (Danny Mairena)**
 
@@ -13,9 +13,9 @@
 
 ## Revision History
 
-| Date | Version | Description | Author |
-| --- | --- | --- | --- |
-| 17/Apr/26 | 1.0 | Initial Vision and Scope document for Share a Beer. | Danny Mairena |
+| Date      | Version | Description                                         | Author        |
+| --------- | ------- | --------------------------------------------------- | ------------- |
+| 17/Apr/26 | 1.0     | Initial Vision and Scope document for Share a Beer. | Danny Mairena |
 
 ## Table of Contents
 
@@ -53,15 +53,15 @@ At the same time, craft breweries — particularly small and mid-sized independe
 
 ## 1.2 References
 
-| Reference | Description | Source |
-| --- | --- | --- |
-| Untappd | Competitive benchmark — beer logging and rating | https://untappd.com |
-| Vivino | Competitive benchmark — wine discovery and social logging | https://www.vivino.com |
-| Strava | Product analog — session tracking, segments, recaps | https://www.strava.com |
-| Instagram | Social feed and ranking model benchmark | https://www.instagram.com |
-| ISO 27001 | Information security management standard | https://www.iso.org/isoiec-27001 |
-| GDPR | General Data Protection Regulation (EU) | https://gdpr.eu |
-| CCPA | California Consumer Privacy Act | https://oag.ca.gov/privacy/ccpa |
+| Reference | Description                                               | Source                           |
+| --------- | --------------------------------------------------------- | -------------------------------- |
+| Untappd   | Competitive benchmark — beer logging and rating           | https://untappd.com              |
+| Vivino    | Competitive benchmark — wine discovery and social logging | https://www.vivino.com           |
+| Strava    | Product analog — session tracking, segments, recaps       | https://www.strava.com           |
+| Instagram | Social feed and ranking model benchmark                   | https://www.instagram.com        |
+| ISO 27001 | Information security management standard                  | https://www.iso.org/isoiec-27001 |
+| GDPR      | General Data Protection Regulation (EU)                   | https://gdpr.eu                  |
+| CCPA      | California Consumer Privacy Act                           | https://oag.ca.gov/privacy/ccpa  |
 
 ---
 
@@ -69,22 +69,23 @@ At the same time, craft breweries — particularly small and mid-sized independe
 
 ## 2.1 Business Opportunity / Problem Statement
 
-| The problem of | fragmented, dated tooling for beer drinkers and breweries — separate apps for logging, posting, discovery, and session recording, with none purpose-built for modern social behavior around beer |
-| --- | --- |
-| affects | casual beer drinkers, craft beer enthusiasts, and independent breweries and beer brands worldwide |
-| the impact of which is | drinkers have no single product that captures, quantifies, and celebrates their beer experiences the way Strava does for running or Letterboxd does for film; breweries lack a direct, verified, data-rich channel to their audience |
-| a successful solution would be | a cross-platform mobile app that unifies social feed, AI beer recognition, session tracking, gamification, discovery, and brewery-side engagement and analytics into one product with a premium modern UX |
+| The problem of                 | fragmented, dated tooling for beer drinkers and breweries — separate apps for logging, posting, discovery, and session recording, with none purpose-built for modern social behavior around beer                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| affects                        | casual beer drinkers, craft beer enthusiasts, and independent breweries and beer brands worldwide                                                                                                                                    |
+| the impact of which is         | drinkers have no single product that captures, quantifies, and celebrates their beer experiences the way Strava does for running or Letterboxd does for film; breweries lack a direct, verified, data-rich channel to their audience |
+| a successful solution would be | a cross-platform mobile app that unifies social feed, AI beer recognition, session tracking, gamification, discovery, and brewery-side engagement and analytics into one product with a premium modern UX                            |
 
 Share a Beer is intended to become the default place where beer lovers capture the beer they drink, track drinking sessions with friends, earn recognition for milestones, discover new beers, and follow the breweries they love — and the default place where breweries build community, respond to their audience, and understand how their beers are received.
 
 ## 2.2 Business Objectives
 
 **BO-1:** Reach **100,000 monthly active users (MAU)** within 12 months of public launch.
-- *Scale:* Unique users opening the app at least once in the trailing 30-day window.
-- *Meter:* Product analytics (Amplitude or equivalent) on the `app_open` event.
-- *Past:* 0 (pre-launch).
-- *Goal:* 100,000 MAU by Month 12.
-- *Stretch:* 250,000 MAU by Month 12.
+
+- _Scale:_ Unique users opening the app at least once in the trailing 30-day window.
+- _Meter:_ Product analytics (Amplitude or equivalent) on the `app_open` event.
+- _Past:_ 0 (pre-launch).
+- _Goal:_ 100,000 MAU by Month 12.
+- _Stretch:_ 250,000 MAU by Month 12.
 
 **BO-2:** Achieve an **average of 8 beers logged per active user per month** by Month 12, demonstrating that the logging + session mechanics are habit-forming.
 
@@ -110,31 +111,31 @@ Share a Beer is intended to become the default place where beer lovers capture t
 
 ## 2.4 Vision Statement
 
-| For | beer drinkers — from casual weekend drinkers to passionate craft enthusiasts — and for the breweries and brands that make the beer they love |
-| --- | --- |
-| Who | want a single, modern, social, quantified home for the beer they drink, the friends they drink it with, and the brands behind it |
-| The **Share a Beer** app | is a cross-platform mobile social network for beer |
-| That | combines a rich social feed, AI-powered beer recognition via camera, session tracking modeled on Strava, gamification and recaps, a beer / brewery encyclopedia, a live map of where the world is drinking, and verified brewery accounts with analytics |
-| Unlike | Untappd (aging UX, limited session/recap/video mechanics), Vivino (wine-only), Instagram (not beer-aware, no beer metadata, no brewery tooling), or Strava (wrong vertical) |
-| Our product | is purpose-built for beer, from the drink up — every photo, every session, every badge, every brewery account is designed around the beer itself, not bolted on top of a generic social feed |
+| For                      | beer drinkers — from casual weekend drinkers to passionate craft enthusiasts — and for the breweries and brands that make the beer they love                                                                                                             |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Who                      | want a single, modern, social, quantified home for the beer they drink, the friends they drink it with, and the brands behind it                                                                                                                         |
+| The **Share a Beer** app | is a cross-platform mobile social network for beer                                                                                                                                                                                                       |
+| That                     | combines a rich social feed, AI-powered beer recognition via camera, session tracking modeled on Strava, gamification and recaps, a beer / brewery encyclopedia, a live map of where the world is drinking, and verified brewery accounts with analytics |
+| Unlike                   | Untappd (aging UX, limited session/recap/video mechanics), Vivino (wine-only), Instagram (not beer-aware, no beer metadata, no brewery tooling), or Strava (wrong vertical)                                                                              |
+| Our product              | is purpose-built for beer, from the drink up — every photo, every session, every badge, every brewery account is designed around the beer itself, not bolted on top of a generic social feed                                                             |
 
 ## 2.5 Business Risks
 
-**RI-1:** **Regulatory / legal exposure around alcohol promotion and age verification.** Jurisdictions differ significantly on how alcohol content can be advertised, whether influencer-like promotion is permitted, and what constitutes adequate age gating. A serious compliance miss could force an app-store takedown or regional block. (*Probability = 0.5; Impact = 9*)
+**RI-1:** **Regulatory / legal exposure around alcohol promotion and age verification.** Jurisdictions differ significantly on how alcohol content can be advertised, whether influencer-like promotion is permitted, and what constitutes adequate age gating. A serious compliance miss could force an app-store takedown or regional block. (_Probability = 0.5; Impact = 9_)
 
-**RI-2:** **App Store and Google Play policy risk.** Both stores maintain alcohol-related content policies and age-rating requirements. Rejection or delisting would be catastrophic for a mobile-first product. (*Probability = 0.3; Impact = 9*)
+**RI-2:** **App Store and Google Play policy risk.** Both stores maintain alcohol-related content policies and age-rating requirements. Rejection or delisting would be catastrophic for a mobile-first product. (_Probability = 0.3; Impact = 9_)
 
-**RI-3:** **AI beer recognition accuracy below user expectations.** If camera recognition is unreliable, users fall back to manual entry, the core differentiation weakens, and the product looks like a worse Untappd. (*Probability = 0.5; Impact = 6*)
+**RI-3:** **AI beer recognition accuracy below user expectations.** If camera recognition is unreliable, users fall back to manual entry, the core differentiation weakens, and the product looks like a worse Untappd. (_Probability = 0.5; Impact = 6_)
 
-**RI-4:** **Incumbent competitive response.** Untappd could modernize, or a major consumer platform (Instagram, Strava, Yelp) could add beer-specific features. (*Probability = 0.4; Impact = 6*)
+**RI-4:** **Incumbent competitive response.** Untappd could modernize, or a major consumer platform (Instagram, Strava, Yelp) could add beer-specific features. (_Probability = 0.4; Impact = 6_)
 
-**RI-5:** **Low cold-start supply — not enough beers in the catalogue, or not enough breweries posting** — producing weak discovery and thin social content in the first 6 months. (*Probability = 0.6; Impact = 6*)
+**RI-5:** **Low cold-start supply — not enough beers in the catalogue, or not enough breweries posting** — producing weak discovery and thin social content in the first 6 months. (_Probability = 0.6; Impact = 6_)
 
-**RI-6:** **Public-health / reputational risk around promoting excessive drinking.** Gamification (streaks, leaderboards, session counts) must be tuned carefully to avoid encouraging unhealthy consumption, which would draw media and regulator criticism. (*Probability = 0.4; Impact = 7*)
+**RI-6:** **Public-health / reputational risk around promoting excessive drinking.** Gamification (streaks, leaderboards, session counts) must be tuned carefully to avoid encouraging unhealthy consumption, which would draw media and regulator criticism. (_Probability = 0.4; Impact = 7_)
 
-**RI-7:** **Privacy and location-data sensitivity.** The Map View and session tracking involve location data, which creates GDPR / CCPA exposure and reputational risk if handled poorly. (*Probability = 0.3; Impact = 7*)
+**RI-7:** **Privacy and location-data sensitivity.** The Map View and session tracking involve location data, which creates GDPR / CCPA exposure and reputational risk if handled poorly. (_Probability = 0.3; Impact = 7_)
 
-**RI-8:** **Brewery monetization may not materialize** at the pace required for BO-5 — breweries are generally lean and may not pay for analytics dashboards early on. (*Probability = 0.5; Impact = 5*)
+**RI-8:** **Brewery monetization may not materialize** at the pace required for BO-5 — breweries are generally lean and may not pay for analytics dashboards early on. (_Probability = 0.5; Impact = 5_)
 
 ## 2.6 Business Assumptions and Dependencies
 
@@ -168,15 +169,15 @@ Share a Beer is intended to become the default place where beer lovers capture t
 
 ## 3.1 Stakeholder Profiles
 
-| Stakeholder | Major value or benefit from this product | Attitudes | Major features of interest | Constraints | End user? |
-| --- | --- | --- | --- | --- | --- |
-| **Casual Beer Drinker** | A fun, low-effort way to remember and share the beers they drink with friends, and to see what friends are drinking. | Enthusiastic but low-patience — will abandon the app quickly if logging is slow or the feed is empty. | AI camera logging, Following feed, friend tagging, direct messaging, simple session posts, weekly recaps. | Must work on mid-tier iOS and Android devices; must be fast with intermittent connectivity; must not feel like a database. | Yes |
-| **Craft Beer Enthusiast** | A rich, stat-driven home for their beer journey — tasting notes, styles tried, breweries explored, countries visited, ratings, recaps, and leaderboards. | Highly engaged; will be early adopters and will push the product to the limits; vocal about data accuracy in the Beer Encyclopedia. | Beer Encyclopedia depth, session stats, achievements, streaks, stats dashboard, Map View, trending beers, brewery follows. | Cares about correctness of beer metadata and community ratings; will churn to Untappd if the catalogue is weak. | Yes |
-| **Social Group / Friends Drinking Together** | Ability to capture a shared drinking session, tag friends who were there, and post the session as a group memory. | Social, not analytical — they want the session post to feel like a great shared photo album. | Session creation, friend tagging in sessions, session-end post UX, media-rich posts, comments and likes. | Needs to work across iOS and Android simultaneously in the same session (most groups are mixed-OS). | Yes |
-| **Brewery / Brand Account** | A verified, direct channel to their drinkers with analytics on how their beers are received across regions and over time; a content surface for new releases. | Interested but skeptical — will adopt if audience and analytics are real; will churn if it becomes another unattended channel. | Verified profile, ability to post, comment, respond to reviews, analytics dashboard (post count, ratings, regions, engagement), brewery detail page in Beer Encyclopedia. | Limited marketing headcount; needs a UX that is near-zero effort to maintain; likely wants scheduling + cross-post features eventually. | Yes |
-| **Platform Admin** | Tooling to keep the platform safe, compliant, and on-brand — moderation, account management, age-verification oversight, and escalation. | Operationally focused; will judge the product on how quickly flagged content can be triaged. | Moderation queue, flagging tools, post/account takedown, age-verification review, audit logs, appeal handling. | Must meet SLAs for reported content; must maintain auditability for regulatory scrutiny. | Yes |
-| **Legal / Compliance (internal)** | Confidence that the product is compliant with alcohol, age-gating, and data-privacy regulations across launch jurisdictions. | Cautious, risk-averse; final approver of age-verification, location-data handling, and content policies. | Age verification flow, data residency, consent flows, takedown policy, terms of service, community guidelines. | Must sign off before launch in each region; may veto specific features or geographies. | No |
-| **Danny Mairena (Founder / PM / Technical Lead)** | Personal-project-level ownership of product direction, technical architecture, and launch strategy. | Fully committed; operates as product, technical, and go-to-market lead in early phase. | All features; prioritization; stack decisions; hiring and vendor selection. | Solo or near-solo in early phase; timeline is constrained by bandwidth. | No |
+| Stakeholder                                       | Major value or benefit from this product                                                                                                                      | Attitudes                                                                                                                           | Major features of interest                                                                                                                                                | Constraints                                                                                                                             | End user? |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| **Casual Beer Drinker**                           | A fun, low-effort way to remember and share the beers they drink with friends, and to see what friends are drinking.                                          | Enthusiastic but low-patience — will abandon the app quickly if logging is slow or the feed is empty.                               | AI camera logging, Following feed, friend tagging, direct messaging, simple session posts, weekly recaps.                                                                 | Must work on mid-tier iOS and Android devices; must be fast with intermittent connectivity; must not feel like a database.              | Yes       |
+| **Craft Beer Enthusiast**                         | A rich, stat-driven home for their beer journey — tasting notes, styles tried, breweries explored, countries visited, ratings, recaps, and leaderboards.      | Highly engaged; will be early adopters and will push the product to the limits; vocal about data accuracy in the Beer Encyclopedia. | Beer Encyclopedia depth, session stats, achievements, streaks, stats dashboard, Map View, trending beers, brewery follows.                                                | Cares about correctness of beer metadata and community ratings; will churn to Untappd if the catalogue is weak.                         | Yes       |
+| **Social Group / Friends Drinking Together**      | Ability to capture a shared drinking session, tag friends who were there, and post the session as a group memory.                                             | Social, not analytical — they want the session post to feel like a great shared photo album.                                        | Session creation, friend tagging in sessions, session-end post UX, media-rich posts, comments and likes.                                                                  | Needs to work across iOS and Android simultaneously in the same session (most groups are mixed-OS).                                     | Yes       |
+| **Brewery / Brand Account**                       | A verified, direct channel to their drinkers with analytics on how their beers are received across regions and over time; a content surface for new releases. | Interested but skeptical — will adopt if audience and analytics are real; will churn if it becomes another unattended channel.      | Verified profile, ability to post, comment, respond to reviews, analytics dashboard (post count, ratings, regions, engagement), brewery detail page in Beer Encyclopedia. | Limited marketing headcount; needs a UX that is near-zero effort to maintain; likely wants scheduling + cross-post features eventually. | Yes       |
+| **Platform Admin**                                | Tooling to keep the platform safe, compliant, and on-brand — moderation, account management, age-verification oversight, and escalation.                      | Operationally focused; will judge the product on how quickly flagged content can be triaged.                                        | Moderation queue, flagging tools, post/account takedown, age-verification review, audit logs, appeal handling.                                                            | Must meet SLAs for reported content; must maintain auditability for regulatory scrutiny.                                                | Yes       |
+| **Legal / Compliance (internal)**                 | Confidence that the product is compliant with alcohol, age-gating, and data-privacy regulations across launch jurisdictions.                                  | Cautious, risk-averse; final approver of age-verification, location-data handling, and content policies.                            | Age verification flow, data residency, consent flows, takedown policy, terms of service, community guidelines.                                                            | Must sign off before launch in each region; may veto specific features or geographies.                                                  | No        |
+| **Danny Mairena (Founder / PM / Technical Lead)** | Personal-project-level ownership of product direction, technical architecture, and launch strategy.                                                           | Fully committed; operates as product, technical, and go-to-market lead in early phase.                                              | All features; prioritization; stack decisions; hiring and vendor selection.                                                                                               | Solo or near-solo in early phase; timeline is constrained by bandwidth.                                                                 | No        |
 
 ## 3.2 User Environment
 
@@ -196,26 +197,32 @@ Share a Beer is a **mobile-first, always-in-the-moment** application. The critic
 ## 3.3 Alternatives and Competition
 
 ### Untappd
+
 - **Strengths:** Largest existing beer-logging community, deep beer catalogue, established brewery relationships, recognizable brand in the space, check-in mechanic is well understood.
 - **Weaknesses:** Dated UX; limited video and rich-media support; no session tracking; no AI camera recognition (manual search is the dominant path); no Strava-style recaps; limited social graph mechanics; brewery analytics are basic; weak gamification.
 
 ### Vivino
+
 - **Strengths:** Excellent camera recognition for wine labels, strong catalogue, smooth onboarding, recognized product model.
 - **Weaknesses:** Wine-only; no beer coverage; no session / drinking-with-friends concept; social layer is secondary to purchase / price lookup.
 
 ### Instagram
+
 - **Strengths:** Massive audience, best-in-class feed and stories/reels, strong creator tooling, frictionless cross-posting.
 - **Weaknesses:** Not beer-aware — beer posts are just images with captions; no structured beer metadata, no Beer Encyclopedia, no session concept, no brewery-specific analytics, no beer-style discovery, and posts compete with all other content verticals for attention.
 
 ### Strava
+
 - **Strengths:** Gold standard for session tracking, kudos, segments, weekly/monthly recaps, and gamified engagement. A proven model for how to turn an activity into a social feed.
 - **Weaknesses:** Wrong vertical; no beer metadata, no recognition, no brewery accounts — useful as a product analog, not as a substitute.
 
 ### Google Maps / Yelp (discovery alternative)
+
 - **Strengths:** Already has breweries and bars indexed with reviews, hours, and photos.
 - **Weaknesses:** Generic; no beer-level metadata, no follow graph, no sessions, no achievements, no brewery owner tooling comparable to a verified brand account with analytics.
 
 ### Status quo ("no app" / "just post to a general social feed")
+
 - **Strengths:** Zero onboarding cost.
 - **Weaknesses:** Nothing is remembered, nothing is quantified, nothing is discoverable later, and breweries have no structured signal on how their beers are performing.
 
@@ -239,7 +246,7 @@ Share a Beer is a **standalone cross-platform mobile application** with a suppor
 - A **moderation / admin console** (web-based, admin-only) for content review, account management, and audit logs.
 - **External dependencies:** App Store / Play Store for distribution; APNs and FCM for push; Apple Sign-In / Google Sign-In for auth; age-verification provider; mapping and geocoding provider; beer metadata provider; CV/ML inference provider.
 
-The consumer mobile app is the *only* end-user surface at launch. The admin console is internal. A public brewery web portal may be considered in a later phase but is out of scope for v1.
+The consumer mobile app is the _only_ end-user surface at launch. The admin console is internal. A public brewery web portal may be considered in a later phase but is out of scope for v1.
 
 ## 4.2 Major Features / Scope
 
@@ -247,7 +254,7 @@ The consumer mobile app is the *only* end-user surface at launch. The admin cons
 
 **FE-1: Account Creation and Authentication.** Sign up and sign in via email, Apple ID, and Google. Session persistence, password reset, and secure token management.
 
-**FE-2: Age Verification.** A mandatory onboarding step that confirms the user meets the legal drinking age for their region, with region-aware logic and audit-ready records. (See *Other Product Requirements*.)
+**FE-2: Age Verification.** A mandatory onboarding step that confirms the user meets the legal drinking age for their region, with region-aware logic and audit-ready records. (See _Other Product Requirements_.)
 
 **FE-3: Profile Management.** User profile with display name, handle, avatar, bio, location (optional, coarse), favorite styles, and drink-preference toggles. Editable post-onboarding.
 
@@ -293,7 +300,7 @@ The consumer mobile app is the *only* end-user surface at launch. The admin cons
 
 **FE-20: Weekly and Monthly Recaps.** Auto-generated personal recap cards (like Spotify Wrapped but for beer) showing top styles, top breweries, most active drinking days, new countries and breweries explored. Shareable to the feed and to external platforms.
 
-**FE-21: Leaderboards.** Regional and global leaderboards for most beers logged, most diverse styles, most countries (see *Other Product Requirements* for fairness / anti-abuse rules).
+**FE-21: Leaderboards.** Regional and global leaderboards for most beers logged, most diverse styles, most countries (see _Other Product Requirements_ for fairness / anti-abuse rules).
 
 **FE-22: Personal Stats Dashboard.** All-time and time-filtered stats: total beers, favorite styles, breweries tried, countries explored, session history, achievement and badge collection.
 
@@ -329,11 +336,11 @@ The consumer mobile app is the *only* end-user surface at launch. The admin cons
 
 ### Feature Priority Summary
 
-| Priority | Features |
-| --- | --- |
-| **Must-have (v1 launch)** | FE-1, FE-2, FE-3, FE-4, FE-5, FE-6, FE-7, FE-8, FE-11, FE-12, FE-13, FE-14, FE-15, FE-16, FE-17, FE-22, FE-23, FE-27, FE-30, FE-31, FE-32, FE-33, FE-34 |
-| **Should-have (fast-follow, within 3 months)** | FE-9, FE-10, FE-18, FE-20, FE-25, FE-26, FE-28, FE-29 |
-| **Nice-to-have (6+ months)** | FE-19, FE-21, FE-24 (enriched brewery pages) |
+| Priority                                       | Features                                                                                                                                                |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Must-have (v1 launch)**                      | FE-1, FE-2, FE-3, FE-4, FE-5, FE-6, FE-7, FE-8, FE-11, FE-12, FE-13, FE-14, FE-15, FE-16, FE-17, FE-22, FE-23, FE-27, FE-30, FE-31, FE-32, FE-33, FE-34 |
+| **Should-have (fast-follow, within 3 months)** | FE-9, FE-10, FE-18, FE-20, FE-25, FE-26, FE-28, FE-29                                                                                                   |
+| **Nice-to-have (6+ months)**                   | FE-19, FE-21, FE-24 (enriched brewery pages)                                                                                                            |
 
 ## 4.3 Deployment Considerations
 

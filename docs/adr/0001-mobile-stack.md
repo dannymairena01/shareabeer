@@ -24,6 +24,7 @@ Option **(1)** — React Native with Expo.
 ## Consequences
 
 **Pros**
+
 - Highest shared-code ratio for cross-platform parity (the business
   requirement that pushed hardest on this decision).
 - Largest hiring pool for consumer mobile (TypeScript + React).
@@ -36,6 +37,7 @@ Option **(1)** — React Native with Expo.
   don't pay a cross-platform penalty for on-device CV performance.
 
 **Cons / accepted trade-offs**
+
 - Some native SDKs (age-verification, some ad networks later) require
   wrapping. We accept this; the bare workflow supports custom native modules.
 - Slightly lower absolute polish than fully native SwiftUI / Compose. The

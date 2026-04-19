@@ -23,6 +23,7 @@ router so there is one source of truth.
 ## Consequences
 
 **Pros**
+
 - Zero codegen step — types flow from `AppRouter` to `@trpc/react-query` on
   the client the moment the server compiles.
 - Strong Zod integration — the same schemas validate wire payloads and
@@ -31,6 +32,7 @@ router so there is one source of truth.
 - Works over HTTP and WebSockets; easy to move subscriptions to WS later.
 
 **Cons / accepted trade-offs**
+
 - Locks the public-facing API to TS clients until we ship the REST adapter.
   Acceptable: we have no external consumers in the v1 scope.
 - Not an open standard like OpenAPI. We mitigate by generating an OpenAPI

@@ -12,7 +12,12 @@
     "./eslint/react-native": "./eslint.react-native.config.js",
     "./eslint/next": "./eslint.next.config.js"
   },
-  "files": ["tsconfig", "eslint.config.js", "eslint.react-native.config.js", "eslint.next.config.js"],
+  "files": [
+    "tsconfig",
+    "eslint.config.js",
+    "eslint.react-native.config.js",
+    "eslint.next.config.js"
+  ],
   "scripts": {
     "typecheck": "echo \"@sab/config is config-only; no typecheck.\"",
     "lint": "echo \"@sab/config is config-only; no lint.\"",
