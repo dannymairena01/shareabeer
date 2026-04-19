@@ -9,8 +9,15 @@ if (!databaseUrl) {
 }
 
 export default defineConfig({
-  schema: './src/schema/index.ts',
-  out: './migrations',
+  // Glob so drizzle-kit reads each file directly without going through the
+  // re-export barrel (its CJS loader can't follow the `./foo.js` convention
+  // we use for runtime-ESM compatibility).
+  schema: './src/schema/*.ts',
+  // Staging folder. Review the emitted SQL, rename to
+  // `YYYYMMDDHHMMSS_<name>.sql`, and move into `supabase/migrations/` so
+  // `supabase db reset` picks it up. Single source of truth is
+  // supabase/migrations/; drizzle-kit is a schema-diff tool only.
+  out: './.drizzle-staging',
   dialect: 'postgresql',
   dbCredentials: { url: databaseUrl },
   casing: 'snake_case',

@@ -7,6 +7,7 @@
  */
 export * from './enums.js';
 export * from './users.js';
+export * from './compliance.js';
 export * from './beers.js';
 export * from './beer-logs.js';
 export * from './posts.js';

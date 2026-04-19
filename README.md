@@ -25,13 +25,18 @@ are in [`docs/adr/`](./docs/adr/).
 # Install all workspace dependencies.
 pnpm install
 
-# Start local data stores (Postgres, Redis, Meilisearch).
+# Start local Postgres + Auth + Storage + Studio (port 54321/54322/54323).
+pnpm supabase:start
+
+# Apply migrations + seed (global regions, first guidelines version).
+pnpm supabase:reset
+
+# Start Redis + Meilisearch (Supabase does not provide these).
 pnpm dev:infra
 
-# Apply the initial Drizzle schema (Phase 1 will add migrations).
+# Copy env defaults and print the local Supabase keys into .env.
 cp .env.example .env
-pnpm db:generate    # writes migrations under packages/db/migrations/
-pnpm db:migrate
+pnpm supabase:status   # copy anon_key, service_role_key, jwt_secret into .env
 
 # Verify the workspace is green.
 pnpm -r typecheck
@@ -39,16 +44,28 @@ pnpm -r lint
 pnpm -r test
 ```
 
+## Making schema changes
+
+1. Edit files under `packages/db/src/schema/`.
+2. `pnpm db:generate` — drizzle-kit writes a diff SQL into
+   `packages/db/.drizzle-staging/`.
+3. Review, rename to `YYYYMMDDHHMMSS_<name>.sql`, and move the file into
+   `supabase/migrations/`.
+4. `pnpm supabase:reset` to re-apply the migration chain + seed from scratch.
+
 ## Run
 
-| Command                | What it does                                              |
-| ---------------------- | --------------------------------------------------------- |
-| `pnpm dev:api`         | Starts the Hono + tRPC API on `http://localhost:4000`     |
-| `pnpm dev:recognition` | Starts the recognition service stub on `:4010`            |
-| `pnpm dev:mobile`      | Starts the Expo dev server                                |
-| `pnpm dev:admin`       | Starts the Next.js admin console on `:3001`               |
-| `pnpm dev:infra`       | `docker compose up -d` for Postgres / Redis / Meilisearch |
-| `pnpm db:studio`       | Opens Drizzle Studio                                      |
+| Command                | What it does                                          |
+| ---------------------- | ----------------------------------------------------- |
+| `pnpm dev:api`         | Starts the Hono + tRPC API on `http://localhost:4000` |
+| `pnpm dev:recognition` | Starts the recognition service stub on `:4010`        |
+| `pnpm dev:mobile`      | Starts the Expo dev server                            |
+| `pnpm dev:admin`       | Starts the Next.js admin console on `:3001`           |
+| `pnpm dev:infra`       | `docker compose up -d` for Redis + Meilisearch        |
+| `pnpm supabase:start`  | `supabase start` — Postgres + Auth + Storage + Studio |
+| `pnpm supabase:reset`  | Re-apply migrations + seed (destroys data; dev-only)  |
+| `pnpm supabase:status` | Print local Supabase URLs + keys                      |
+| `pnpm db:studio`       | Opens Drizzle Studio                                  |
 
 Smoke test the API:
 

@@ -1,21 +1,6 @@
 services:
-  postgres:
-    image: postgres:16-alpine
-    container_name: sab-postgres
-    environment:
-      POSTGRES_USER: sab
-      POSTGRES_PASSWORD: sab
-      POSTGRES_DB: shareabeer
-    ports:
-      - '5432:5432'
-    volumes:
-      - sab-postgres-data:/var/lib/postgresql/data
-      - ./postgres-init:/docker-entrypoint-initdb.d:ro
-    healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -U sab -d shareabeer']
-      interval: 5s
-      timeout: 3s
-      retries: 20
+  # Postgres is provided by `supabase start` on port 54322 — see ADR 0004.
+  # This compose file covers only the services Supabase doesn't ship.
 
   redis:
     image: redis:7-alpine
@@ -43,6 +28,5 @@ services:
       - sab-meilisearch-data:/meili_data
 
 volumes:
-  sab-postgres-data:
   sab-redis-data:
   sab-meilisearch-data:

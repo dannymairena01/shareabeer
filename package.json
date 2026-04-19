@@ -23,8 +23,11 @@
     "dev:mobile": "pnpm --filter @sab/mobile start",
     "dev:admin": "pnpm --filter @sab/admin dev",
     "dev:infra": "docker compose -f infra/docker/docker-compose.yml up -d",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:status": "supabase status",
+    "supabase:reset": "supabase db reset",
     "db:generate": "pnpm --filter @sab/db generate",
-    "db:migrate": "pnpm --filter @sab/db migrate",
     "db:studio": "pnpm --filter @sab/db studio",
     "prepare": "husky"
   },
