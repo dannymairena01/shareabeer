@@ -19,4 +19,11 @@ config.resolver.nodeModulesPaths = [
 // Use hoisted versions of react / react-native first.
 config.resolver.disableHierarchicalLookup = true;
 
+// pnpm stores packages under node_modules/.pnpm and symlinks the resolved
+// tree into each package's own node_modules. Metro needs to follow those
+// symlinks to discover transitive deps (without this, @expo/metro-runtime
+// can't locate whatwg-fetch even though it is installed).
+config.resolver.unstable_enableSymlinks = true;
+config.resolver.unstable_enablePackageExports = true;
+
 module.exports = config;
