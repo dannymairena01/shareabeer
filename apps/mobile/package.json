@@ -14,6 +14,8 @@
     "test": "echo \"@sab/mobile has no tests yet.\""
   },
   "dependencies": {
+    "@expo-google-fonts/instrument-serif": "^0.4.1",
+    "@expo-google-fonts/inter": "^0.4.2",
     "@expo/metro-runtime": "~6.1.2",
     "@expo/vector-icons": "^15.0.3",
     "@react-navigation/native": "^7.2.2",
@@ -25,10 +27,13 @@
     "@trpc/client": "^11.0.0-rc.660",
     "@trpc/react-query": "^11.0.0-rc.660",
     "expo": "~54.0.33",
+    "expo-blur": "^15.0.8",
     "expo-camera": "~17.0.10",
     "expo-constants": "~18.0.13",
+    "expo-font": "^14.0.11",
     "expo-image": "~3.0.11",
     "expo-image-picker": "~17.0.10",
+    "expo-linear-gradient": "^15.0.8",
     "expo-linking": "~8.0.11",
     "expo-location": "~19.0.8",
     "expo-notifications": "~0.32.16",
@@ -44,6 +49,7 @@
     "react-native-reanimated": "~4.1.1",
     "react-native-safe-area-context": "~5.6.0",
     "react-native-screens": "~4.16.0",
+    "react-native-svg": "^15.12.1",
     "zod": "^3.24.1"
   },
   "devDependencies": {

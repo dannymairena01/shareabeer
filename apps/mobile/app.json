@@ -56,7 +56,8 @@
       ],
       "expo-secure-store",
       "expo-updates",
-      "@sentry/react-native/expo"
+      "@sentry/react-native/expo",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
